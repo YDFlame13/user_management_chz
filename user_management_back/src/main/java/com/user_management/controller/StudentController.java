@@ -31,8 +31,8 @@ public class StudentController {
 
     //删除学生
     @PostMapping("/student_delete")
-    public Object studentDelete(@RequestBody Integer id){
-        if(studentService.studentDelete(id)){
+    public Object studentDelete(@RequestBody Student student){
+        if(studentService.studentDelete(student.getId())){
             Result result=new Result(200,"删除成功！",null);
             return result;
         }else{
@@ -45,7 +45,7 @@ public class StudentController {
     @PostMapping("/student_update")
     public Object studentUpdate(@RequestBody Student student){
         if(studentService.studentUpdate(student)){
-            Result result=new Result(200,"删除成功！",null);
+            Result result=new Result(200,"修改成功！",null);
             return result;
         }else{
             Result result=new Result(500,"服务器错误，请稍后重试！",null);
