@@ -1,0 +1,54 @@
+.root {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(227, 228, 229);
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 170px;
+  padding-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 500px;
+}
+
+.content li input {
+  flex-grow: 1;
+  height: 70px;
+  width: 500px;
+  padding: 0 20px;
+  border: 1px rgb(202, 197, 197) solid;
+  border-radius: 35px;
+  font-size: 16px;
+}
+
+/* .content li input:focus-visible{
+  outline-color: rgb(154, 150, 150);
+  outline-style: solid;
+} */
+
+.content li div {
+  margin-top: 5px;
+  color: red;
+}
+
+.submit input {
+  background-color: rgb(68, 148, 57);
+  color: white;
+}
+
+.footer {
+  background-color: gray;
+  line-height: 70px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 18px;
+}
